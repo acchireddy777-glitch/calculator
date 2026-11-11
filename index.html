@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <div class="display" aria-live="polite">
+      <div id="history" class="history"></div>
+      <div id="screen" class="screen">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="key clear" data-action="clear">C</button>
+      <button class="key clear" data-action="delete" aria-label="Delete last digit">&larr;</button>
+      <button class="key" data-action="percent">%</button>
+      <button class="key op" data-operator="/" aria-label="Divide">&divide;</button>
+
+      <button class="key" data-digit="7">7</button>
+      <button class="key" data-digit="8">8</button>
+      <button class="key" data-digit="9">9</button>
+      <button class="key op" data-operator="*" aria-label="Multiply">&times;</button>
+
+      <button class="key" data-digit="4">4</button>
+      <button class="key" data-digit="5">5</button>
+      <button class="key" data-digit="6">6</button>
+      <button class="key op" data-operator="-" aria-label="Subtract">&minus;</button>
+
+      <button class="key" data-digit="1">1</button>
+      <button class="key" data-digit="2">2</button>
+      <button class="key" data-digit="3">3</button>
+      <button class="key op" data-operator="+" aria-label="Add">+</button>
+
+      <button class="key zero" data-digit="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
